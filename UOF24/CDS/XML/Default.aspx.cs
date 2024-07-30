@@ -6,13 +6,27 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
+using System.Xml.Linq;
 
 public partial class CDS_XML_Default : Ede.Uof.Utility.Page.BasePage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
-        
+        XElement fieldValueXE = new XElement("FieldValue");
+        XElement item01XE = new XElement("Item", new XAttribute("id","A01"),
+         new XAttribute("value", "V01"));
+        XElement item02XE = new XElement("Item", new XAttribute("id", "A021"),
+      new XAttribute("value", "V02"), "InnerText");
+        XElement item03XE = new XElement("Item", new XAttribute("id", "A03"),
+      new XAttribute("value", "V03"));
+
+        fieldValueXE.Add(item01XE);
+        fieldValueXE.Add(item02XE);
+        fieldValueXE.Add(item03XE);
+
+        txtXML.Text = fieldValueXE.ToString( SaveOptions.DisableFormatting );
+        return;
         //<FieldValue>
         //  <Item id='A01' value='V01' />
         //  <Item id='A02' value='V02' >InnerText</Item>
@@ -20,6 +34,7 @@ public partial class CDS_XML_Default : Ede.Uof.Utility.Page.BasePage
         //<FieldValue>
 
         XmlDocument xmlDoc = new XmlDocument();
+
         //<FieldValue/>
         XmlElement fieldValueElement = xmlDoc.CreateElement("FieldValue");
 
@@ -52,6 +67,15 @@ public partial class CDS_XML_Default : Ede.Uof.Utility.Page.BasePage
     }
     protected void btnGetValue_Click(object sender, EventArgs e)
     {
+
+        XElement xe = XElement.Parse(txtXML.Text);
+        txtValue.Text = xe.Elements("Item").
+            Where(x => x.Attribute("id").Value == txtID.Text)
+            .FirstOrDefault().Attribute("value").Value;
+
+//        var list = xe.Elements("Item").ToList();
+
+        return;
         XmlDocument xmlDoc = new XmlDocument();
         xmlDoc.LoadXml(txtXML.Text);
 
@@ -60,7 +84,9 @@ public partial class CDS_XML_Default : Ede.Uof.Utility.Page.BasePage
         //  <Item id='A02' value='V02' >InnerText</Item>
         //  <Item id='A03' value='V03' />
         //<FieldValue>
-
-        txtValue.Text = xmlDoc.SelectSingleNode(string.Format("./FieldValue/Item[@id='{0}']", txtID.Text)).Attributes["value"].Value;
+        txtValue.Text = xmlDoc.SelectSingleNode
+            (string.Format(
+                "./FieldValue/Item[@id='{0}']", txtID.Text)).
+                Attributes["value"].Value;
     }
 }
