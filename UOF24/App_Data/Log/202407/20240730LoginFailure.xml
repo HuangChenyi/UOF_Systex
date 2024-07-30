@@ -1,0 +1,8 @@
+﻿<Event eventID="2e7dcc84-493e-413b-bf09-2878505c7e3d" LogTime="2024/07/30 14:53:39" User="" Url="/UOF_Systex/Login.aspx" Assembly="Ede.Uof.Web, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Login Type: Login
+Login Account: mary  IP: ::1  From:Browser
+Login Failure: 密碼錯誤
+
+   於 System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   於 _Login.cvalidLogin_ServerValidate(Object source, ServerValidateEventArgs args) 於 Z:\Builds\20\UofAgile\3.Setup\src\Web\Ede.Uof.Web\Login.aspx.cs: 行 1140
+</Event>
