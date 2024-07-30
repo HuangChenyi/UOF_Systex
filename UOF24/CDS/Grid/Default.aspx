@@ -14,7 +14,10 @@
     }
 
 </script>
-    
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+
+
     <Ede:Grid ID="grid" OnBeforeExport="grid_BeforeExport" PageSize="3" AllowSorting="true" runat="server" OnSorting="grid_Sorting" OnPageIndexChanging="grid_PageIndexChanging" DataKeyNames="USER_GUID" AutoGenerateColumns="false" AllowPaging="true">
 <EnhancePagerSettings FirstImageUrl="" FirstAltImageUrl="" PreviousImageUrl="" NextImageUrl="" LastImageUrl="" LastAltImage="" PageNumberCssClass="" PageNumberCurrentCssClass="" PageInfoCssClass="" PageRedirectCssClass="" NextIAltImageUrl="" PreviousAltImageUrl="" ShowHeaderPager="True"></EnhancePagerSettings>
 
@@ -36,6 +39,10 @@
      <asp:Button ID="btnGetSelectKey" runat="server" Text="取得選取內容(Index)" OnClick="btnGetSelectKey_Click" />    
     <asp:TextBox ID="txtContent" runat="server" TextMode="MultiLine" Width="300px" Height="300px"></asp:TextBox>
    
+
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    
 
 </asp:Content>
 
