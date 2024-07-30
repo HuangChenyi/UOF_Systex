@@ -21,8 +21,7 @@ namespace Training.PO
                                 TB_EB_USER 
                             INNER JOIN TB_EB_EMPL_DEP
                                 ON TB_EB_USER.USER_GUID = TB_EB_EMPL_DEP.USER_GUID
-                            WHERE GROUP_ID = @GROUP_ID
-                                ";
+                            WHERE GROUP_ID = @GROUP_ID";
 
             this.m_db.AddParameter("@GROUP_ID", groupId);
 

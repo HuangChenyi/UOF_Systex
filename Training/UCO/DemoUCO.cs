@@ -24,6 +24,33 @@ namespace Training.UCO
             m_DemoPO.InsertTaskData(dr);
         }
 
+
+        public List<ExcelData> ParseExcel(string fileName)
+        {
+            List<ExcelData> list = new List<ExcelData>();
+
+            OfficeOpenXml.ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
+
+            using (OfficeOpenXml.ExcelPackage package = 
+                new OfficeOpenXml.ExcelPackage(new System.IO.FileInfo(fileName)))
+            {
+                var sheet = package.Workbook.Worksheets[0];
+                var start = sheet.Dimension.Start;
+                var end = sheet.Dimension.End;
+                for (int i = 2; i <= end.Row; i++)
+                {
+                    ExcelData data = new ExcelData();
+                    data.品項 = sheet.Cells[i, 1].Text;
+                    data.數量 = double.Parse(sheet.Cells[i, 2].Text);
+                    data.金額 = double.Parse(sheet.Cells[i, 3].Text);
+                    data.小計 = double.Parse(sheet.Cells[i, 4].Text);
+
+                    list.Add(data);
+                }
+            }
+
+            return list;
+        }
       
 
         public DataTable GetUserData()
@@ -52,5 +79,14 @@ namespace Training.UCO
             m_DemoPO.UpdateFormResult(docNbr, formResult);
         }
 
+    }
+
+
+    public class ExcelData
+    {
+        public string 品項 { get; set; }
+        public double 數量 { get; set; }
+        public double 金額 { get; set; }
+        public double 小計 { get; set; }
     }
 }

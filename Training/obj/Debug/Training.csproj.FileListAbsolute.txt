@@ -1955,3 +1955,10 @@ D:\技轉教學\Systex\UOF_Training\Training\obj\Debug\Training.csproj.CoreCompi
 D:\技轉教學\Systex\UOF_Training\Training\obj\Debug\Training.csproj.Up2Date
 D:\技轉教學\Systex\UOF_Training\Training\obj\Debug\Training.dll
 D:\技轉教學\Systex\UOF_Training\Training\obj\Debug\Training.pdb
+D:\技轉教學\Systex\UOF_Training\Training\bin\Debug\EPPlus.dll
+D:\技轉教學\Systex\UOF_Training\Training\bin\Debug\EPPlus.Interfaces.dll
+D:\技轉教學\Systex\UOF_Training\Training\bin\Debug\EPPlus.System.Drawing.dll
+D:\技轉教學\Systex\UOF_Training\Training\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\技轉教學\Systex\UOF_Training\Training\bin\Debug\System.ComponentModel.Annotations.dll
+D:\技轉教學\Systex\UOF_Training\Training\bin\Debug\EPPlus.xml
+D:\技轉教學\Systex\UOF_Training\Training\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml

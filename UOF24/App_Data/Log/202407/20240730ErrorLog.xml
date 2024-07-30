@@ -1,0 +1,35 @@
+﻿<Event eventID="e0791fa2-df04-4e48-89d1-70f1c6ee8caf" LogTime="2024/07/30 16:08:00" User="admin" Url="/UOF_Systex/WKF/FormManagement/VerifyFlow.aspx" Assembly="Ede.Uof.Utility.Page, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+System.IndexOutOfRangeException: Worksheet position out of range.
+   於 OfficeOpenXml.ExcelWorksheets.get_Item(Int32 PositionID)
+   於 Training.UCO.DemoUCO.ParseExcel(String fileName) 於 D:\技轉教學\Systex\UOF_Training\Training\UCO\DemoUCO.cs: 行 37
+   於 WKF_OptionalFields_optionField2.Button1_Click(Object sender, EventArgs e) 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\optionField2.ascx.cs: 行 221
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+</Event>
+<Event eventID="3fe044ed-09b5-4bfc-887f-b5c8abb2cd39" LogTime="2024/07/30 16:09:57" User="admin" Url="/UOF_Systex/WKF/FormManagement/VerifyFlow.aspx" Assembly="Ede.Uof.Utility.Page, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+System.IndexOutOfRangeException: Worksheet position out of range.
+   於 OfficeOpenXml.ExcelWorksheets.get_Item(Int32 PositionID)
+   於 Training.UCO.DemoUCO.ParseExcel(String fileName) 於 D:\技轉教學\Systex\UOF_Training\Training\UCO\DemoUCO.cs: 行 37
+   於 WKF_OptionalFields_optionField2.Button1_Click(Object sender, EventArgs e) 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\optionField2.ascx.cs: 行 221
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+</Event>
+<Event eventID="0fef94b9-8e6e-4f5f-ab78-2c726e883c36" LogTime="2024/07/30 16:12:13" User="admin" Url="/UOF_Systex/WKF/FormManagement/VerifyFlow.aspx" Assembly="Ede.Uof.Utility.Page, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 Training.UCO.DemoUCO.ParseExcel(String fileName) 於 D:\技轉教學\Systex\UOF_Training\Training\UCO\DemoUCO.cs: 行 39
+   於 WKF_OptionalFields_optionField2.Button1_Click(Object sender, EventArgs e) 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\optionField2.ascx.cs: 行 221
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+</Event>
+<Event eventID="9e71d85a-c7d5-4e38-a452-859632bc152e" LogTime="2024/07/30 16:13:52" User="admin" Url="/UOF_Systex/WKF/FormManagement/VerifyFlow.aspx" Assembly="Ede.Uof.Utility.Page, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+System.IndexOutOfRangeException: Worksheet position out of range.
+   於 OfficeOpenXml.ExcelWorksheets.get_Item(Int32 PositionID)
+   於 Training.UCO.DemoUCO.ParseExcel(String fileName) 於 D:\技轉教學\Systex\UOF_Training\Training\UCO\DemoUCO.cs: 行 37
+   於 WKF_OptionalFields_optionField2.Button1_Click(Object sender, EventArgs e) 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\optionField2.ascx.cs: 行 221
+   於 System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   於 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+</Event>

@@ -1410,13 +1410,20 @@
           </Condition>
         </FieldItem>-->
         <!-- ==End 104版差勤表單 End== -->
-        <FieldItem WriteUI="~/CDS/WKF_Fields/optionField1.ascx" 
-                   FieldName="optionField1">
+        <FieldItem WriteUI="~/CDS/WKF_Fields/optionField1.ascx" FieldName="optionField1">
           <Display>
             <Value Culture="zh-TW" Name="外掛欄位範例1" />
             <Value Culture="zh-CN" Name="外掛欄位範例1" />
             <Value Culture="en-US" Name="外掛欄位範例1" />
             <Value Culture="vi" Name="外掛欄位範例1" />
+          </Display>
+        </FieldItem>
+        <FieldItem DesignUI="~/CDS/WKF_Fields/SetupField_OptionField2.aspx" WriteUI="~/CDS/WKF_Fields/optionField2.ascx" FieldName="optionField2">
+          <Display>
+            <Value Culture="zh-TW" Name="外掛欄位範例2" />
+            <Value Culture="zh-CN" Name="外掛欄位範例2" />
+            <Value Culture="en-US" Name="外掛欄位範例2" />
+            <Value Culture="vi" Name="外掛欄位範例2" />
           </Display>
         </FieldItem>
       </OptionalField>
