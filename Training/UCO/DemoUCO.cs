@@ -24,11 +24,32 @@ namespace Training.UCO
             m_DemoPO.InsertTaskData(dr);
         }
 
+        public void ParseExcelPackage(string fileName)
+        {
+            using (OfficeOpenXml.ExcelPackage package =
+                new OfficeOpenXml.ExcelPackage(
+                    $"D:\\{DateTime.Now.ToString("yyyyMMddHHmmss")}.xlsx"))
+            {
+                package.Workbook.Worksheets.Add("Sheet1");
+                var sheet = package.Workbook.Worksheets[0];
+
+                //99乘法表
+                for (int i = 1; i <= 9; i++)
+                {
+                    for (int j = 1; j <= 9; j++)
+                    {
+                        sheet.Cells[i, j].Value = i + "x" + j + "=" + i * j;
+                    }
+                }
+
+                package.Save();
+            }
+        }
 
         public List<ExcelData> ParseExcel(string fileName)
         {
             List<ExcelData> list = new List<ExcelData>();
-
+            List<ExcelData> list1 = new List<ExcelData>();
             OfficeOpenXml.ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
 
             using (OfficeOpenXml.ExcelPackage package = 
@@ -45,7 +66,7 @@ namespace Training.UCO
                     data.金額 = double.Parse(sheet.Cells[i, 3].Text);
                     data.小計 = double.Parse(sheet.Cells[i, 4].Text);
 
-                    list.Add(data);
+                       
                 }
             }
 
