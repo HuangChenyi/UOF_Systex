@@ -139,6 +139,7 @@
     <Compile Include="Trigger\DemoForm\StartFormTrigger.cs" />
     <Compile Include="UCO\AutoNbr.cs" />
     <Compile Include="UCO\DemoUCO.cs" />
+    <Compile Include="UCO\Model.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

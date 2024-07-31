@@ -1,0 +1,66 @@
+﻿<Event eventID="4ea49e24-b791-45fc-8a31-57eea39e3314" LogTime="2024/07/31 11:11:24" User="admin" Url="/UOF_Systex/CDS/WKF_Fields/SetupField_OptionField3.aspx" Assembly="Ede.Uof.Utility.Page, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 WKF_OptionalFields_SetupField_OptionField3.SetModifyData() 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\SetupField_OptionField3.aspx.cs: 行 166
+   於 WKF_OptionalFields_SetupField_OptionField3.Page_Load(Object sender, EventArgs e) 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\SetupField_OptionField3.aspx.cs: 行 116
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+</Event>
+<Event eventID="3fa5edf8-187c-4e0f-b365-be4919b842aa" LogTime="2024/07/31 11:23:27" User="admin" Url="/UOF_Systex/CDS/WKF_Fields/SetupField_OptionField3.aspx" Assembly="Ede.Uof.Utility.Page, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: g. Path &#39;itemAuth&#39;, line 1, position 72.
+   於 Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   於 Newtonsoft.Json.JsonTextReader.Read()
+   於 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   於 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   於 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   於 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   於 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   於 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   於 WKF_OptionalFields_SetupField_OptionField3.SetModifyData() 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\SetupField_OptionField3.aspx.cs: 行 167
+   於 WKF_OptionalFields_SetupField_OptionField3.Page_Load(Object sender, EventArgs e) 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\SetupField_OptionField3.aspx.cs: 行 116
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+</Event>
+<Event eventID="dba080fe-fd3b-435d-b855-896010c85f87" LogTime="2024/07/31 13:11:49" User="admin" Url="/UOF_Systex/CDS/WKF_Fields/SetupField_OptionField3.aspx" Assembly="Ede.Uof.Utility.Page, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+System.Xml.XmlException: 在根層次的資料無效。 行 1，位置 1。
+   於 System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   於 System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   於 System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   於 System.Xml.XmlReader.MoveToContent()
+   於 System.Xml.Linq.XElement.Load(XmlReader reader, LoadOptions options)
+   於 System.Xml.Linq.XElement.Parse(String text, LoadOptions options)
+   於 WKF_OptionalFields_SetupField_OptionField3.SetModifyData() 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\SetupField_OptionField3.aspx.cs: 行 174
+   於 WKF_OptionalFields_SetupField_OptionField3.Page_Load(Object sender, EventArgs e) 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\SetupField_OptionField3.aspx.cs: 行 117
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+</Event>
+<Event eventID="03755063-f277-4339-8f76-a164c0289044" LogTime="2024/07/31 13:28:46" User="admin" Url="/UOF_Systex/WKF/FormManagement/MultiColumnDesign/DesignFormField.aspx" Assembly="Ede.Uof.Utility.Page, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+System.ArgumentNullException: 值不能為 null。
+參數名稱: s
+   於 System.IO.StringReader..ctor(String s)
+   於 System.Xml.Linq.XElement.Parse(String text, LoadOptions options)
+   於 WKF_OptionalFields_OptionFieldUC3.SetField(VersionField versionField) 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\OptionFieldUC3.ascx.cs: 行 228
+   於 WKF_OptionalFields_OptionFieldUC3.Page_Load(Object sender, EventArgs e) 於 D:\技轉教學\Systex\UOF_Training\UOF24\CDS\WKF_Fields\OptionFieldUC3.ascx.cs: 行 41
+   於 System.Web.UI.Control.OnLoad(EventArgs e)
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Control.LoadRecursive()
+   於 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+</Event>

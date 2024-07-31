@@ -1426,6 +1426,28 @@
             <Value Culture="vi" Name="外掛欄位範例2" />
           </Display>
         </FieldItem>
+        <FieldItem DesignUI="~/CDS/WKF_Fields/SetupField_OptionField3.aspx" WriteUI="~/CDS/WKF_Fields/OptionFieldUC3.ascx" FieldName="optionFiel3">
+          <Display>
+            <Value Culture="zh-TW" Name="外掛欄位範例3" />
+            <Value Culture="zh-CN" Name="外掛欄位範例3" />
+            <Value Culture="en-US" Name="外掛欄位範例3" />
+            <Value Culture="vi" Name="外掛欄位範例3" />
+          </Display>
+          <Condition>
+            <Tag Name="type">
+              <Display Clture="zh-TW" Name="類別" />
+              <Display Clture="zh-CN" Name="類別" />
+              <Display Clture="en-US" Name="類別" />
+              <Display Clture="vi" Name="類別" />
+            </Tag>
+            <Tag Name="amount">
+              <Display Clture="zh-TW" Name="金額" />
+              <Display Clture="zh-CN" Name="金額" />
+              <Display Clture="en-US" Name="金額" />
+              <Display Clture="vi" Name="金額" />
+            </Tag>
+          </Condition>
+        </FieldItem>
       </OptionalField>
     </Field>
   </WKF>

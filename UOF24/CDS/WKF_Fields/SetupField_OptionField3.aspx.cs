@@ -16,8 +16,10 @@ using Ede.Uof.WKF.Utility;
 using System.IO;
 using System.Net;
 using System.Linq;
+using Training.UCO;
+using System.Xml.Linq;
 
-public partial class WKF_OptionalFields_SetupField_OptionField2 : Ede.Uof.Utility.Page.BasePage
+public partial class WKF_OptionalFields_SetupField_OptionField3 : Ede.Uof.Utility.Page.BasePage
 {
     private DesignFormFieldUCO designFormFieldUCO = new DesignFormFieldUCO();
 
@@ -131,7 +133,7 @@ public partial class WKF_OptionalFields_SetupField_OptionField2 : Ede.Uof.Utilit
     protected override void OnPreRender(EventArgs e)
     {
         base.OnPreRender(e);
-        UC_FiledDropList1.SelectedValue = "optionalField_optionFiel2";
+        UC_FiledDropList1.SelectedValue = "optionalField_optionFiel3";
     }
     
     /// <summary>
@@ -159,6 +161,24 @@ public partial class WKF_OptionalFields_SetupField_OptionField2 : Ede.Uof.Utilit
 
         //若有擴充屬性，可以用該屬性存取
         //fieldDr["EXTENSION_SETTING"];
+
+        if(!string.IsNullOrEmpty(fieldDr["EXTENSION_SETTING"].ToString()))
+        {
+         
+            //<ExtraData amountMin=0 amontMax=0  itemAuth=''  />
+            //ExtraData extraData = Newtonsoft.Json.JsonConvert.DeserializeObject<ExtraData>(fieldDr["EXTENSION_SETTING"].ToString());
+            //rnumAmountMax.Value = extraData.amountMax;
+            //rnumAmountMin.Value = extraData.amountMin;
+            //UC_ChoiceList.XML = extraData.itemAuth;
+
+            XElement xe = XElement.Parse(fieldDr["EXTENSION_SETTING"].ToString());
+            rnumAmountMax.Value = Convert.ToDouble(xe.Attribute("amontMax").Value);
+            rnumAmountMin.Value = Convert.ToDouble(xe.Attribute("amountMin").Value);
+            UC_ChoiceList.XML = xe.Attribute("itemAuth").Value;
+
+        }
+
+
 
         //序號為Lable 顯示
         lblSeq.Text = fieldDr["FIELD_SEQ"].ToString();
@@ -233,8 +253,20 @@ public partial class WKF_OptionalFields_SetupField_OptionField2 : Ede.Uof.Utilit
         fieldDr["IS_DISPLAY_FIELD_NAME"] = this.cbxDisplayFieldName.Checked.ToString();
 
         //若有擴充屬性，可以用該屬性存取
-        //fieldDr["EXTENSION_SETTING"];
+        //<ExtraData amountMin=0 amontMax=0  itemAuth=''  />
+        //ExtraData extraData = new ExtraData();
+        //extraData.amountMax = rnumAmountMax.Value.Value;
+        //extraData.amountMin = rnumAmountMin.Value.Value;
+        //extraData.itemAuth = "";
+        //fieldDr["EXTENSION_SETTING"]=Newtonsoft.Json.JsonConvert.SerializeObject(extraData);
 
+        XElement xe = new XElement("ExtraData",
+            new XAttribute("amontMax", rnumAmountMax.Value.Value.ToString())
+            ,new XAttribute("amountMin", rnumAmountMin.Value.Value.ToString()),
+            new XAttribute("itemAuth", UC_ChoiceList.XML)
+       
+            );
+        fieldDr["EXTENSION_SETTING"] = xe.ToString();
         //欄位顯示寬度,如果有需要控制則可使用此屬性,沒用到就0即可
         fieldDr["DISPLAY_LENGTH"] = 0;
         //欄位內容長度,如果有需要控制則可使用此屬性,沒用到就0即可
@@ -246,7 +278,7 @@ public partial class WKF_OptionalFields_SetupField_OptionField2 : Ede.Uof.Utilit
         //欄位型態(此欄位的值不可更改)
         fieldDr["FIELD_TYPE"] = "optionalField";
         //外掛欄位型態(此欄位的值不可更改)
-        fieldDr["FIELD_SECTYPE"] = "optionFiel2";
+        fieldDr["FIELD_SECTYPE"] = "optionFiel3";
 
         //是否允許刪除欄位
         fieldDr["DELFLAG"] = delFalg.ToString();
