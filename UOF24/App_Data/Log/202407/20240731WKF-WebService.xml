@@ -1,0 +1,74 @@
+﻿<Event eventID="0ac72b95-58ab-45ce-80d0-f8447bf02246" LogTime="2024/07/31 14:45:57" User="admin" Url="/UOF_Systex/PublicAPI/WKF/Wkf.asmx" Assembly="Ede.Uof.Web, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+呼叫方法：SendForm
+狀態：&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;ReturnValue&gt;
+  &lt;Status&gt;1&lt;/Status&gt;
+  &lt;FormNumber&gt;BUL240700001&lt;/FormNumber&gt;
+  &lt;TaskId&gt;c4d4e32d-d4e9-442b-964b-d9e06498a266&lt;/TaskId&gt;
+&lt;/ReturnValue&gt;
+結果：&lt;Form formVersionId=&quot;6fd8fa9c-ecc2-41b3-8315-7c77d9e9e676&quot; urgentLevel=&quot;2&quot;&gt;
+  &lt;Applicant account=&quot;Tony&quot; groupId=&quot;&quot; jobTitleId=&quot;&quot;&gt;
+    &lt;Comment&gt;&lt;/Comment&gt;
+  &lt;/Applicant&gt;
+  &lt;FormFieldValue&gt;
+    &lt;FieldItem fieldId=&quot;NO&quot; fieldValue=&quot;20240731144556&quot; fillerName=&quot;Tony&quot; fillerUserGuid=&quot;c496e32b-0968-4de5-95fc-acf7e5a561c0&quot; fillerAccount=&quot;Tony&quot; fillSiteId=&quot;&quot; IsNeedAutoNbr=&quot;false&quot; /&gt;
+    &lt;FieldItem fieldId=&quot;type&quot; fieldValue=&quot;A&quot; fillerName=&quot;Tony&quot; fillerUserGuid=&quot;c496e32b-0968-4de5-95fc-acf7e5a561c0&quot; fillerAccount=&quot;Tony&quot; fillSiteId=&quot;&quot; /&gt;
+    &lt;FieldItem fieldId=&quot;item&quot; fieldValue=&quot;item&quot; fillerName=&quot;Tony&quot; fillerUserGuid=&quot;c496e32b-0968-4de5-95fc-acf7e5a561c0&quot; fillerAccount=&quot;Tony&quot; fillSiteId=&quot;&quot; /&gt;
+    &lt;FieldItem fieldId=&quot;amount&quot; fieldValue=&quot;100&quot; fillerName=&quot;Tony&quot; fillerUserGuid=&quot;c496e32b-0968-4de5-95fc-acf7e5a561c0&quot; fillerAccount=&quot;Tony&quot; fillSiteId=&quot;&quot; /&gt;
+  &lt;/FormFieldValue&gt;
+  &lt;JsonDisplay&gt;{&quot;Field_NO&quot;:&quot;&quot;,&quot;Field_type&quot;:&quot;&quot;,&quot;Field_item&quot;:&quot;&quot;,&quot;Field_amount&quot;:&quot;&quot;}&lt;/JsonDisplay&gt;
+  &lt;MessageContent&gt;
+    &lt;VersionField&gt;
+      &lt;FieldItem fieldId=&quot;ield_NO&quot;&gt;
+        &lt;FieldValue&gt;&lt;/FieldValue&gt;
+      &lt;/FieldItem&gt;
+      &lt;FieldItem fieldId=&quot;ield_type&quot;&gt;
+        &lt;FieldValue&gt;&lt;/FieldValue&gt;
+      &lt;/FieldItem&gt;
+      &lt;FieldItem fieldId=&quot;ield_item&quot;&gt;
+        &lt;FieldValue&gt;&lt;/FieldValue&gt;
+      &lt;/FieldItem&gt;
+      &lt;FieldItem fieldId=&quot;ield_amount&quot;&gt;
+        &lt;FieldValue&gt;&lt;/FieldValue&gt;
+      &lt;/FieldItem&gt;
+    &lt;/VersionField&gt;
+  &lt;/MessageContent&gt;
+&lt;/Form&gt;
+</Event>
+<Event eventID="7ae253da-4a61-4650-a54e-52c1d873be4f" LogTime="2024/07/31 14:46:43" User="admin" Url="/UOF_Systex/PublicAPI/WKF/Wkf.asmx" Assembly="Ede.Uof.Web, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+呼叫方法：SendForm
+狀態：&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;ReturnValue&gt;
+  &lt;Status&gt;1&lt;/Status&gt;
+  &lt;FormNumber&gt;BUL240700002&lt;/FormNumber&gt;
+  &lt;TaskId&gt;a980b405-88d5-434f-9845-371b0aeef6db&lt;/TaskId&gt;
+&lt;/ReturnValue&gt;
+結果：&lt;Form formVersionId=&quot;6fd8fa9c-ecc2-41b3-8315-7c77d9e9e676&quot; urgentLevel=&quot;2&quot;&gt;
+  &lt;Applicant account=&quot;Tony&quot; groupId=&quot;&quot; jobTitleId=&quot;&quot;&gt;
+    &lt;Comment&gt;&lt;/Comment&gt;
+  &lt;/Applicant&gt;
+  &lt;FormFieldValue&gt;
+    &lt;FieldItem fieldId=&quot;NO&quot; fieldValue=&quot;20240731144643&quot; fillerName=&quot;Tony&quot; fillerUserGuid=&quot;c496e32b-0968-4de5-95fc-acf7e5a561c0&quot; fillerAccount=&quot;Tony&quot; fillSiteId=&quot;&quot; IsNeedAutoNbr=&quot;false&quot; /&gt;
+    &lt;FieldItem fieldId=&quot;type&quot; fieldValue=&quot;A&quot; fillerName=&quot;Tony&quot; fillerUserGuid=&quot;c496e32b-0968-4de5-95fc-acf7e5a561c0&quot; fillerAccount=&quot;Tony&quot; fillSiteId=&quot;&quot; /&gt;
+    &lt;FieldItem fieldId=&quot;item&quot; fieldValue=&quot;item&quot; fillerName=&quot;Tony&quot; fillerUserGuid=&quot;c496e32b-0968-4de5-95fc-acf7e5a561c0&quot; fillerAccount=&quot;Tony&quot; fillSiteId=&quot;&quot; /&gt;
+    &lt;FieldItem fieldId=&quot;amount&quot; fieldValue=&quot;100&quot; fillerName=&quot;Tony&quot; fillerUserGuid=&quot;c496e32b-0968-4de5-95fc-acf7e5a561c0&quot; fillerAccount=&quot;Tony&quot; fillSiteId=&quot;&quot; /&gt;
+  &lt;/FormFieldValue&gt;
+  &lt;JsonDisplay&gt;{&quot;Field_NO&quot;:&quot;&quot;,&quot;Field_type&quot;:&quot;&quot;,&quot;Field_item&quot;:&quot;&quot;,&quot;Field_amount&quot;:&quot;&quot;}&lt;/JsonDisplay&gt;
+  &lt;MessageContent&gt;
+    &lt;VersionField&gt;
+      &lt;FieldItem fieldId=&quot;ield_NO&quot;&gt;
+        &lt;FieldValue&gt;&lt;/FieldValue&gt;
+      &lt;/FieldItem&gt;
+      &lt;FieldItem fieldId=&quot;ield_type&quot;&gt;
+        &lt;FieldValue&gt;&lt;/FieldValue&gt;
+      &lt;/FieldItem&gt;
+      &lt;FieldItem fieldId=&quot;ield_item&quot;&gt;
+        &lt;FieldValue&gt;&lt;/FieldValue&gt;
+      &lt;/FieldItem&gt;
+      &lt;FieldItem fieldId=&quot;ield_amount&quot;&gt;
+        &lt;FieldValue&gt;&lt;/FieldValue&gt;
+      &lt;/FieldItem&gt;
+    &lt;/VersionField&gt;
+  &lt;/MessageContent&gt;
+&lt;/Form&gt;
+</Event>

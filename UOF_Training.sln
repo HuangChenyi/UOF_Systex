@@ -31,6 +31,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UOF24", "UOF24\", "{B77DF1A
 		SlnRelativePath = "UOF24\"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{36CFFAB5-CE4D-4166-B887-E2BF361ACFA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{B77DF1A1-13DB-435F-9440-45F08E86429F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B77DF1A1-13DB-435F-9440-45F08E86429F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{B77DF1A1-13DB-435F-9440-45F08E86429F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{36CFFAB5-CE4D-4166-B887-E2BF361ACFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CFFAB5-CE4D-4166-B887-E2BF361ACFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CFFAB5-CE4D-4166-B887-E2BF361ACFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CFFAB5-CE4D-4166-B887-E2BF361ACFA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

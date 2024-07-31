@@ -1,0 +1,15 @@
+﻿<Event eventID="91a74d5e-ba3a-4e72-b14d-708ace6afabd" LogTime="2024/07/31 14:34:31" User="" Url="/UOF_Systex/PublicAPI/System/Authentication.asmx" Assembly="Ede.Uof.EIP.Security, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Application:ERP, Account:admin, IP:::1 authentication success
+</Event>
+<Event eventID="9f14a363-c7c4-4deb-bfb6-afada0b1131b" LogTime="2024/07/31 14:36:46" User="" Url="/UOF_Systex/PublicAPI/System/Authentication.asmx" Assembly="Ede.Uof.EIP.Security, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Application:ERP, Account:admin, IP:::1 authentication success
+</Event>
+<Event eventID="c6cd7ab3-9a28-4bdd-a4a8-d6f4e8e2153b" LogTime="2024/07/31 14:38:00" User="" Url="/UOF_Systex/PublicAPI/System/Authentication.asmx" Assembly="Ede.Uof.EIP.Security, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Application:ERP, Account:admin, IP:::1 authentication success
+</Event>
+<Event eventID="4754072f-52c9-4f29-8d69-e0979f406666" LogTime="2024/07/31 14:45:56" User="" Url="/UOF_Systex/PublicAPI/System/Authentication.asmx" Assembly="Ede.Uof.EIP.Security, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Application:ERP, Account:admin, IP:::1 authentication success
+</Event>
+<Event eventID="066e4c8c-7528-4b8b-9bef-d209005684f7" LogTime="2024/07/31 14:46:43" User="" Url="/UOF_Systex/PublicAPI/System/Authentication.asmx" Assembly="Ede.Uof.EIP.Security, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Application:ERP, Account:admin, IP:::1 authentication success
+</Event>

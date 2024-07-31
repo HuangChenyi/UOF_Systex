@@ -1,0 +1,21 @@
+﻿<Event eventID="04afe798-1832-4921-add1-5c47f839d550" LogTime="2024/07/31 14:12:48" User="" Url="" Assembly="Ede.Uof.Utility.Task.Engine, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Task:Ede.Uof.EIP.HR104.SyncHR.SyncCompanyTask with DataKey 161BF546-79D3-4E98-9C3A-66A13893E34A is started
+</Event>
+<Event eventID="a1942196-f7b2-459e-8b6e-ba51b00a832d" LogTime="2024/07/31 14:12:48" User="" Url="" Assembly="Ede.Uof.Utility.Task.Engine, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Task:Ede.Uof.WKF.RefineCurrentDocTask with DataKey EnableSearchRefineTask is started
+</Event>
+<Event eventID="4cd47022-be78-422e-8d0f-67c062a6e354" LogTime="2024/07/31 14:12:48" User="" Url="" Assembly="Ede.Uof.Utility.Task.Engine, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Task:Ede.Uof.EIP.HR104.SyncHR.SyncCompanyTask with DataKey 161BF546-79D3-4E98-9C3A-66A13893E34A is successed
+</Event>
+<Event eventID="e45ed34c-63a8-4f77-8a20-921773ed478b" LogTime="2024/07/31 14:12:48" User="" Url="" Assembly="Ede.Uof.Utility.Task.Engine, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Task:Ede.Uof.WKF.RefineCurrentDocTask with DataKey EnableSearchRefineTask is successed
+</Event>
+<Event eventID="24284f9a-17c4-4859-ad51-923f5b3a4052" LogTime="2024/07/31 14:12:49" User="" Url="" Assembly="Ede.Uof.Utility.Task.Engine, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Task:Ede.Uof.EIP.HR104.SyncHR.SyncCompanyTask with DataKey B1E96E51-25D9-46DD-87EB-FFB09D0375F4 is started
+</Event>
+<Event eventID="77dee807-7734-46e7-a0ac-c60bcfc5c8ae" LogTime="2024/07/31 14:12:49" User="" Url="" Assembly="Ede.Uof.Utility.Task.Engine, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Task:Ede.Uof.EIP.HR104.SyncHR.SyncCompanyTask with DataKey B1E96E51-25D9-46DD-87EB-FFB09D0375F4 is successed
+</Event>
+<Event eventID="6fdcd314-f7e7-4289-8a09-77b73096d60d" LogTime="2024/07/31 14:20:30" User="" Url="" Assembly="Ede.Uof.Utility.Task, Version=24.0.8398.52406, Culture=neutral, PublicKeyToken=null">
+Call dynamic/InterruptTimeout done
+</Event>
